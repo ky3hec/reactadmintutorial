@@ -5,7 +5,7 @@ export const Dashboard = () => (
   <Card>
     <CardHeader title="Welcome to the administration" />
     <CardContent>Lorem ipsum sic dolor amet...</CardContent>
-    <Button color="primary"> Hi there </Button>
+    <Button color="primary" onClick={()=>{console.log('Button');}}> Hi there </Button>
   </Card>
 );
 export default Dashboard;
