@@ -5,6 +5,8 @@ import { UserList } from "./userList";
 import { PostList } from "./postList";
 import { PostEdit } from "./editPost";
 import { PostCreate } from "./createPost";
+import PostIcon from "@material-ui/icons/Book";
+import UserIcon from "@material-ui/icons/Group";
 
 const dataProvider = jsonServerProvider("https://jsonplaceholder.typicode.com");
 const App = () => (
@@ -14,8 +16,9 @@ const App = () => (
       list={PostList}
       edit={PostEdit}
       create={PostCreate}
+      icon={PostIcon}
     />
-    <Resource name="users" list={UserList} />
+    <Resource name="users" list={UserList} icon={UserIcon} />
   </Admin>
 );
 
